@@ -1,0 +1,110 @@
+/* header */
+
+#header {
+  padding: 1.25rem 0;
+
+  .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .views {
+    display: flex;
+    gap: 1rem;
+  }
+
+  img {
+    width: 12.5rem;
+  }
+}
+
+/* main */
+
+#main {
+  margin-top: 3.125rem;
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1.875rem;
+  }
+
+  .todo,
+  .create-todo {
+    border-radius: 1.25rem;
+    padding: 1.25rem;
+  }
+
+  .create-todo,
+  .todo {
+    display: grid;
+    grid-template-columns: 1.25rem 8fr 1.25rem;
+    align-items: center;
+    height: 4rem;
+    gap: 1rem;
+  }
+
+  .shake {
+    animation: shake 0.5s;
+
+    input::placeholder {
+      color: #e44332;
+    }
+  }
+
+  .arrow {
+    margin: 0 0 0 auto;
+  }
+
+  .todo {
+    align-items: start;
+    grid-template-columns: 1fr 6rem;
+    background-color: #1b1b1b;
+    min-height: 120px;
+    cursor: text;
+  }
+
+  .operations {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+  }
+
+  .todo-list {
+    display: grid;
+    gap: 1.5em;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .no-todos {
+    text-align: center;
+    font-size: 2em;
+    height: 100%;
+    margin-top: 6em;
+    color: var(--gray);
+  }
+
+  .todo-completed textarea {
+    opacity: 0.4;
+    text-decoration: line-through;
+  }
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  25% {
+    transform: translate(0.5px, 0.5px) rotate(0.5deg);
+  }
+  50% {
+    transform: translate(0, 0) rotate(0eg);
+  }
+  75% {
+    transform: translate(-0.5px, 0.5px) rotate(-0.5deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+}

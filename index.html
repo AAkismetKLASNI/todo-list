@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>todo-list</title>
+
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="assets/todoist-icon.svg"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="global.css" rel="stylesheet" />
+    <link href="index.css" rel="stylesheet" />
+
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <script type="module" src="/scripts/controller.js" defer></script>
+    <script type="module" src="/scripts/handlers.js" defer></script>
+    <script type="module" src="/scripts/views.js" defer></script>
+  </head>
+  <body>
+    <header id="header">
+      <div class="container">
+        <div class="wrapper">
+          <img src="assets/todoist.svg" alt="" />
+          <div class="views"></div>
+        </div>
+      </div>
+    </header>
+    <main id="main">
+      <div class="container">
+        <div class="wrapper" id="main-wrapper">
+          <div class="create-todo"></div>
+          <ul class="todo-list"></ul>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

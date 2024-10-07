@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --white: #cfcfcf;
+  --black: #111111;
+  --gray: #464646;
+  --green: #17a43f;
+}
+
+html {
+  scrollbar-color: var(--gray) var(--black);
+}
+
+body {
+  font-family: 'Geologica', sans-serif;
+  color: var(--white);
+  background-color: var(--black);
+  overflow-y: scroll;
+}
+
+.container {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 20px;
+  width: 100%;
+}
+
+div,
+span,
+a,
+input,
+textarea {
+  font-size: 1.1em;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+svg {
+  cursor: pointer;
+}
+
+input,
+textarea {
+  width: 100%;
+  border: none;
+  background-color: inherit;
+  color: var(--white);
+  outline: none;
+}
+
+textarea {
+  font-family: 'Geologica', sans-serif;
+  resize: none;
+  overflow: hidden;
+  height: 100%;
+}
+
+img,
+.no-todos,
+input::placeholder {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
